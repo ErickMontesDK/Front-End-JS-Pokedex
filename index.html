@@ -98,11 +98,11 @@
             
             <!--Partes de input-->
             <div class="searchb">
-                <a><input type="button" onclick="fetchPokemon()" class="sbutton"></input></a>
+                <a><input type="button" onclick="fetchPokemon()" class="sbutton" id="sbutton"></input></a>
             </div>
 
             <div class="input">
-                <input type="text" placeholder="ingresar" id="pokeName" name="pokeName" class="box">
+                <input type="text" placeholder="ingresar" id="pokeName" name="pokeName" class="box" onkeypress="">
             </div class="input">
 
             <div class="text1">Buscar</div>
@@ -122,7 +122,7 @@
 
                 <!--Segunda pantalla de información-->
                 <div class="screeninfo">
-                    <span id="pokeApodo">   <p>Bienvenido Tripulante</p></span>
+                    <span id="pokeApodo">   <p>Bienvenido Entrenador</p></span>
                     <span id="pokeEntrada"> <p>Ingresa el nombre del Pokémon que te interesa<br> 
                                                 Y aquí se mostrará la información.</p></span>
                     <div class="stats" id="stats">  <p></p>     </div>
