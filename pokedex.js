@@ -1,3 +1,18 @@
+/*--------------------Empezar función al dar enter---------------------------*/
+//Rastrea el input donde se ingresó el nombre
+var input = document.getElementById("pokeName");
+
+//Ejecuta un evento cuando se suelta una tecla
+input.addEventListener("keyup", function(event) {
+    //Si la tecla es "Enter" entonces...
+  if (event.keyCode === 13) {
+    //Cancela la accion por default
+   event.preventDefault();
+   //Ejecuta la función que esta en el boton de busqueda en el HTML
+   document.getElementById("sbutton").click();
+  }
+});
+
 /*---------------------------------------------------------------------------------------------------------*/
 //Función para conseguir la información del pokemon ingresado
 const fetchPokemon=() => {
