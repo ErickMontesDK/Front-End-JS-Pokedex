@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pokédex</title>
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Press+Start+2P&family=Smooch+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <section class="banner"><h1>Pokédex Launch X</h1></section>
+
+    <!--Parte principal-->
+    <section class="pokedex">
+
+        <!--Primer pieza del pokedex-->
+        <div class="Seccion1">
+
+            <!--Primer pantalla de información-->
+            <div class="screen">
+                <div id="pokemon" class="blank"><span>Región Kanto</span></div>
+                <div id="poketipo1" class="none"><span>Tipo</span></div>
+                <div id="poketipo2" class="none"><span>Tipo</span></div>
+                <div id="pokeID"><span>ID:###</span></div>
+                <div id="pokeHeight"><img src="./Resources/icons/icons8-regla-64.png" width="25px"><span>tamaño</span></div>
+                <div id="pokeWeight"><img src="./Resources/icons/icons8-peso-64.png" width="25px"><span>peso</span></div>
+                <div id="pokeHabitat"><img src="./Resources/icons/icons8-bosque-50.png" width="20px"><span>habitat</span></div>
+
+                <div class="spaceFotos">
+                    <div class="foto" id="imgPrin"><img src="./Resources/icons/pokeball8bit.png" width="100%" id="pokeImg" class="blank"></div>
+                    <div class="fotoF" id="imgH"><img src="./Resources/icons/pokeball8bit.png" id="pokeImgFemale" width="100%"><br><span>Hembra</span></div>
+                    <div class="fotoS" id="imgS"><img src="./Resources/icons/pokeball8bit.png" id="pokeImgFemale" width="100%"><br><span>Shiny</span></div>
+                </div>
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                
+                
+                
+
+            </div>
+
+            <!--Decoraciones en pantalla-->
+            <div class="DetScreen"></div>
+            <div class="redcircle3">
+                <div class="reflection"></div>
+            </div>
+            <div class="redcircle4">
+                <div class="reflection"></div>
+            </div>
+            <div class="redcircle5">
+                <div class="reflection"></div>
+            </div>
+
+            <!--Detalles superiores pokedex-->
+            <div class="detailTop">
+                <div class="det1">
+                    <div class="bluecircle">
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="redcircle">
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="yelcircle">
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+                
+                <div class="det2">
+                    <div class="greencircle">
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Botones decorativos-->
+            <div class="cross1"></div>
+            <div class="cross2"></div>
+            <div class="cross3"></div>
+
+            <div class="buttonred"></div>
+            <div class="buttonblue"></div>
+            
+            <!--Partes de input-->
+            <div class="searchb">
+                <a><input type="button" onclick="fetchPokemon()" class="sbutton"></input></a>
+            </div>
+
+            <div class="input">
+                <input type="text" placeholder="ingresar" id="pokeName" name="pokeName" class="box">
+            </div class="input">
+
+            <div class="text1">Buscar</div>
+
+        </div>
+        <!--Segunda pieza del pokedex-->
+        <div class="SeccionSize">
+
+            <!--Decoracion superior-->
+            <div class="Seccion3">
+                <div class="Seccion4"></div>
+                <div class="Seccion5"></div>
+            </div>
+
+            <!--Cuerpo principal-->
+            <div class="Seccion2">
+
+                <!--Segunda pantalla de información-->
+                <div class="screeninfo">
+                    <span id="pokeApodo">   <p>Bienvenido Tripulante</p></span>
+                    <span id="pokeEntrada"> <p>Ingresa el nombre del Pokémon que te interesa<br> 
+                                                Y aquí se mostrará la información.</p></span>
+                    <div class="stats" id="stats">  <p></p>     </div>
+                </div>
+
+                <!--Botones decorativos-->
+                <div class="button1"></div>
+                <div class="button2"></div>
+                <div class="yelcircle2">
+                    <div class="reflection"></div>
+                </div>
+
+                <!--Teclado-->
+                <div class="teclado">
+                    <div><span>0</span><span>A B C</span></div>
+                    <div><span>1</span><span>D E F</span></div>
+                    <div><span>2</span><span>G H I</span></div>
+                    <div><span>3</span><span>J K L</span></div>
+                    <div><span>4</span><span>M N Ñ</span></div>
+                    <div><span>5</span><span>O P Q</span></div>
+                    <div><span>6</span><span>R S T</span></div>
+                    <div><span>7</span><span>U V W</span></div>
+                    <div><span>8</span><span>X Y Z</span></div>
+                    <div><span>9</span><span># $ %</span></div>
+                </div>
+
+                <!--Cuadro de evolución-->
+                <div class="text2">
+                    Cuadro de evolución
+                </div>
+
+                <img src="./Resources/icons/arrow.png" class="arrow1">
+                <img src="./Resources/icons/arrow.png" class="arrow2">
+
+                    <!--Primer pantalla-->
+                    <div class="BaseStage" id="babyStage">
+                           <div class="card"></div class="card">
+                    </div>
+
+                    <!--Segunda pantalla-->
+                    <div class="FstEvol" id="SndStage">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                        <div class="card"> </div class="card">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                    </div>
+
+                    <!--Tercer pantalla-->
+                    <div class="LastEvol" id="LastStage">
+                        <div class="card"></div class="card">
+                        <div class="card"></div class="card">
+                    </div>
+            </div>   
+        </div>
+    </section>
+</body>
+
+<!--Footer-->
+<footer>
+    <div class="text">
+        <p>Pokedex realizada para Launch X</p>
+        <p>Hecho por Erick Montes Bedolla</p>
+    </div>
+
+    <img src="./Resources/Images/murcielago.png" class="bat">
+
+    <!--Script de javascript-->
+    <script src="./pokedex.js"></script>
+
+</footer>
+
+</html>
