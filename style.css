@@ -39,10 +39,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /*---------------Middle Center------------------------------*/
 .pokedex{
     position: relative;
-    
     width: 100%;
-    
-
 
     display: flex;
     flex-direction: row;
@@ -84,7 +81,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     flex-direction: column;
     justify-content: flex-end;
 }
-
 .Seccion2{
     height: 82%;
     width: 100%;
@@ -100,7 +96,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     position: relative;
 }
-
 .Seccion3{
     height: 10%;
     width: 100%;
@@ -108,7 +103,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     align-items: flex-end;
 }
-
 .Seccion4{
     height: 100%;
     width: 65%;
@@ -120,7 +114,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-color: rgba(00, 00, 00, .4);
     border-style: solid solid solid solid;
 }
-
 .Seccion5{
     height:13px;
     width: 20%;
@@ -136,7 +129,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -ms-border-radius: 0px 0px 0px 0px ;
     -o-border-radius: 0px 0px 0px 0px ;
 }
-
 .detailTop{
     width: 100%;
     height: 60px;
@@ -149,7 +141,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     justify-content: flex-start;
 }
-
 .det1{
     background-color: #86293B;
 
@@ -160,13 +151,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-color: #86293B;
     border-style: solid solid solid solid;
     border-top-left-radius: 25px;
-    
 
     position: relative;
-    
-    
 }
-
 .det2{
     
 
@@ -182,6 +169,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     
 }
 
+/*--------Input y boton------------*/
 .input{
     position: absolute;
     top:77%;
@@ -202,7 +190,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     color: rgba(00, 00, 00, .7);
 }
-
 .searchb{
     position: absolute;
     border-radius: 50%;
@@ -213,7 +200,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-color: #323031;
     left: 5%;
 }
-
 .sbutton{
     width: 100%;
     height: 100%;
@@ -232,6 +218,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     top:456px;
     left: 25px;
 }
+
+/*------------Detalles evolucion-------------*/
 .text2{
     font-family: 'Comfortaa', cursive;
     font-size: 12px;
@@ -274,6 +262,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 8px solid #D7D5D6;
     margin-left: 10px;
 }
+
 .redcircle{
     width: 17px;
     height: 17px;
@@ -286,8 +275,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 3px solid #D7D5D6;
 
     position: absolute;
-    left: 75px;
-    top: 0px;
+    left: -80px;
+    top: -30px;
 }
 .yelcircle{
     width: 17px;
@@ -301,8 +290,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 3px solid #D7D5D6;
     
     position: absolute;
-    left: 100px;
-    top: 0px;
+    left: -55px;
+    top: -30px;
 }
 .greencircle{
     width: 17px;
@@ -331,10 +320,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: 3px;
     opacity: .8;
 }
+
 .teclado{
     width: 90%;
     height: 55px;
-    background-color: #0189D9;
+    background-color: #0181CB;
     position: relative;
     top: 20px;
     left: 50%;
@@ -366,7 +356,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-family: 'Comfortaa', cursive;
     font-size: 8px;
     color: white;
-    opacity: .7;
+    opacity: .8;
 }
 .teclado span:first-child{
     font-size: 15px;
@@ -387,34 +377,54 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-right: 0px solid transparent;
     border-bottom: 0px solid transparent;
 }
+
+.cruz{
+    width: 96px;
+    height: 96px;
+
+    position: absolute;
+    top:400px;
+    right: 50px;
+}
 .cross1{
     width: 30px;
     height: 90px;
     background-color: #323031;
     border: 3px solid rgba(00, 00, 00, .4);
-
     position: absolute;
-    top:400px;
-    right: 80px;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
 }
 .cross2{
     width: 90px;
     height: 30px;
     background-color: #323031;
     border: 3px solid rgba(00, 00, 00, .4);
-
     position: absolute;
-    top:430px;
-    right: 50px;
+    top:50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
 }
 .cross3{
     width: 36px;
     height: 36px;
-    background-color: #323031;
+    background-color: rgba(00, 00, 00, .7);
 
     position: absolute;
-    top:430px;
-    right: 80px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 
 .buttonred{
@@ -447,6 +457,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     border: 2px solid rgba(255, 255, 255, .5);
 }
+
 .button1{
     width:60px;
     height: 13px;
@@ -585,7 +596,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     top: 74px;
 }
 
-
 /*-----------------------Screen------------------------------------------------------*/
 .screen{
     position: absolute;
@@ -623,7 +633,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .DetScreen{
     position: absolute;
     top:346px;
-    left: -5px;
+    left: -6px;
 
     width: 0px;
     height: 0px;
@@ -642,7 +652,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .screen img{
     opacity: .9;
 }
-
 /*----------------------Info Screen-------------------------------------------------*/
 .screen div{
     
@@ -656,6 +665,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+
 #pokemon{
     grid-area: name;
     font-size: medium;
@@ -733,15 +743,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #pokeHabitat span{
     margin-left: 3px;
 }
+
 .spaceFotos{
     grid-area: blank;
     font-size: 7px;
+    position: relative;
 }
 .foto{
     width: 150px;
     height: 150px;
     position: absolute;
-    top:50px;   left: 20px;
+    top:17px;   left: 20px;
 
     
 }
@@ -749,7 +761,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 50px;
     height: 80px;
     position: absolute;
-    top:45px;   left: 190px;
+    top:9px;   right: 10px;
 
     display: flex;
     flex-direction: column;
@@ -759,12 +771,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 50px;
     height: 80px;
     position: absolute;
-    top:135px;   left: 190px;
+    top:98px;   right:10px;
 
     display: flex;
     flex-direction: column;
 }
-
 /*--------Color de los tipos-------------------------------*/
 
 .none       {opacity: 0;}
@@ -808,7 +819,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: aliceblue;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.2' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");}
 
-
 /*--------------Segunda pantalla-------------------*/
 .screeninfo{
     width: 85%;
@@ -834,7 +844,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding-top: 0px;
     color: rgba(00, 00, 00, .7);
 }
-
 .screeninfo p{
     line-height: 11px;
     
@@ -844,8 +853,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     top:-5px;
 }
 
-        /*Grafica de estadisticas*/
-
+/*----------Grafica de estadisticas-----------------*/
 .stats{
     display: grid;
     width: 90%;
@@ -861,7 +869,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -ms-transform: translate(-50%,0);
     -o-transform: translate(-50%,0);
 }
-
 .stats .b{
 
     display: grid;
@@ -877,7 +884,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     
     
 }
-
 .stats .b div:first-child{
     
     width: 100%;
@@ -891,7 +897,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding-bottom: 5px;
     
 }
-
 .stats .b div:nth-child(2){
     
     width: 100%;
@@ -900,10 +905,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     justify-content: center;
 
-    position: relative;
-    
+    position: relative; 
 }
-
 
 /*Cadena de evolución*/
 .evolution{
@@ -934,16 +937,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: 5px;
     margin-right: 9px;
 }
-
 .card img{
     margin-top: -5px;
 }
-
 .card p{
     position: absolute;
     top: 40px;
 }
-
 
 .FstEvol{
     width:220px;
@@ -996,10 +996,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 3px solid rgba(00, 00, 00, .6);
     border-radius: 7px;
 }
-.arrow{
-    width:50px;
-    background-color: black;
-}
 
 /*---------Footer---------------*/
 footer{
@@ -1022,9 +1018,192 @@ footer .text p{
 footer .text p:first-child{
     font-size: 27px;
 }
+
 .bat{
     width: 100px;
     position: absolute;
     top: 20px;
     right: 20px;
 }
+
+/*---------------------------Responsive----------------------------*/
+@media screen and (max-width:724px){
+    footer .text{
+        width: 51%;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:485px){
+    .banner{
+        background-color: blueviolet;
+        font-size: small;
+    }
+
+    /*----------pokedex forms--------*/
+    .Seccion1{
+        width:100%;
+    }
+    .SeccionSize{
+        width: 95%;
+        margin-left: -5%;
+    }
+    .Seccion2{
+        top: -1px;
+    }
+    .det1{
+        top:-3px;
+        left: -1px;
+    }
+    .det2{
+        top:-1px;
+        width:320px;
+
+        left: -2px;
+    }
+    .screen{
+        width: 80%;
+    }
+    .input{
+        width: 50%;
+    }
+    .searchb{
+        left: 3%;
+    }
+    .text1{
+        left:4%;
+    }
+
+    /*---------------Detalles-----------*/
+    .cruz{
+        right:7%;
+        height:66px;
+        width: 66px;
+    }
+    .cross1{
+        height: 60px;
+        width: 20px;
+    }
+    .cross2{
+        width: 60px;
+        height: 20px;
+    }
+    .cross3{
+        height: 24px;   width: 24px;
+    }
+    .buttonred{
+        left:70px;
+    }
+    .buttonblue{
+        left: 160px;
+    }
+    .DetScreen{
+        left:-27px;
+    }
+    .greencircle{
+        left: 20px;
+    }
+    .yelcircle{
+        left: -5px;
+    }
+    .redcircle{
+        left: -30px;
+    }
+
+    /*--------------Screen---------------------*/
+    .foto{
+        width: 60%;
+        left: 3px;
+    }
+    .fotoF, .fotoS{
+        
+        right: 3px;
+    }
+
+    /*-----------Evolucion------------------------*/
+    .BaseStage{
+        left: 2px;
+        width: 108px;
+    }
+    .LastEvol{
+        left: 2px;
+        width: 108px;
+
+    }
+    .FstEvol{
+        right: 2px;
+    }
+    .arrow1, .arrow2{
+        left: 120px;
+        width: 5%;
+    }
+
+    /*----------Footer-------------------------*/
+    footer .text{
+        width:55%;
+        top:15px;
+    }
+    footer .text p{
+        font-family: 'Comfortaa', cursive;
+        color: #D7D5D6;
+    }
+    footer .text p:first-child{
+        font-size: 24px;
+    }
+    .bat{
+        width: 80px;
+    }
+}  
+@media screen and (max-width:359px){
+ .screen{
+     border-width: 15px 15px 40px 15px ;
+     width: 90%;
+ }   
+ .DetScreen{
+     left: -30px;
+ }
+ .redcircle3{
+     top: 325px;
+ }
+ .redcircle4, .redcircle5{
+     top:70px;
+ }
+ .screeninfo{
+     top: 0px;
+ }
+ .teclado{
+     top:5px;
+     height: 50px;
+ }
+ .teclado span{
+     font-size: 7px;
+ }
+ .teclado span:first-child{
+     font-size: 11px;
+ }
+ .button1, .button2{
+     top:200px;
+ }
+ .yelcircle2{
+     top:225px;
+ }
+ .text2{
+     top:220px;
+ }
+ .BaseStage{
+     top:235px;
+     height: 60px;
+     width: 70px;
+ }
+ .LastEvol{
+     width: 70px;
+     height: 120px;
+     top: 305px;
+ }
+ .screeninfo{
+     line-height: 9px;
+ }
+ .screeninfo p{
+     line-height: 10px;
+ }
+} 
