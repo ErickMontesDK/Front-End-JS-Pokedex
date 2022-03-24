@@ -253,7 +253,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .bluecircle{
     width: 40px;
     height: 40px;
-    background-color: #0189D9;
+    
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -261,12 +261,31 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -o-border-radius: 100%;
     border: 8px solid #D7D5D6;
     margin-left: 10px;
+
+    animation-name: color;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    
+    
+}
+@keyframes color {
+   0%{background-color: white;}
+   10%{background-color: white;}
+   30%{background-color: transparent;}
+   39%{background-color: transparent;}
+   40%{background-color: #81b5d3;}
+   70%{background-color: #0181CB;}
+   80%{background-color: transparent;}
+   99%{background-color: transparent;}
+   100%{background-color: white;}
 }
 
 .redcircle{
     width: 17px;
     height: 17px;
-    background-color: #E72B23;
+    
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -277,11 +296,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     position: absolute;
     left: -80px;
     top: -30px;
+
+    animation-name: colorR;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
+@keyframes colorR {
+    0%{background-color: transparent;}
+    24%{background-color: transparent;}
+    25%{background-color: #dd635e;}
+    
+    100%{background-color: #E72B23;}
+}
+
 .yelcircle{
     width: 17px;
     height: 17px;
-    background-color: #FCEE00;
+    
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -292,11 +325,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     position: absolute;
     left: -55px;
     top: -30px;
+
+    animation-name: colorY;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes colorY {
+    0%{background-color: transparent;}
+    49%{background-color: transparent;}
+    50%{background-color: #ece66e;}
+    100%{background-color: #FCEE00;}
 }
 .greencircle{
     width: 17px;
     height: 17px;
-    background-color: #527229;
+    
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -307,6 +352,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     position: absolute;
     left: -30px;
     top: -30px;
+
+    animation-name: colorG;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes colorG {
+    0%{background-color: transparent;}
+    74%{background-color: transparent;}
+    75%{background-color: #a3ad96;}
+    100%{background-color: #527229;}
 }
 .reflection{
     width: 40%;
@@ -320,6 +377,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: 3px;
     opacity: .8;
 }
+
 
 .teclado{
     width: 90%;
@@ -681,7 +739,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #poketipo1{
     grid-area: Type;
 
-    width: 60px;
+    width: 64px;
     height: 20px;
 
     border-radius: 10px;
@@ -691,11 +749,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -o-border-radius: 10px;
 
     margin-left: 12px;
+
+    font-size: 8px;
 }
 #poketipo2{
     grid-area: Type2;
 
-    width: 60px;
+    width: 64px;
     height: 20px;
 
     border-radius: 10px;
@@ -705,6 +765,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     -o-border-radius: 10px;
 
     margin-left: 12px;
+
+    font-size: 8px;
 }
 #pokeHeight{
     grid-area: Height;
@@ -790,6 +852,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15l15 15H0V15zM15 0l15 15V0H15z' fill='%23000000' fill-opacity='0.21' fill-rule='evenodd'/%3E%3C/svg%3E");}
 .electric   {background-color: rgba(241, 168, 11, 0.6);
     background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%23000000' fill-opacity='0.10' fill-rule='evenodd'/%3E%3C/svg%3E");}
+/*----Ajuste de texto en electric ----*/
+
+
 .fairy      {background-color: rgba(250, 178, 242, 0.7);
     background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.21'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
 .fighting   {background-color: rgba(109, 53, 33, 0.6);
