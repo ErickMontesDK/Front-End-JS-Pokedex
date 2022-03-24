@@ -15,8 +15,12 @@ input.addEventListener("keyup", function(event) {
 
 /*---------------------------------------------------------------------------------------------------------*/
 //Función para conseguir la información del pokemon ingresado
+//Archivo de audio que se reproduce con cada busqueda
+var music=new Audio("./Resources/sound/menupokedex.mp3")
 const fetchPokemon=() => {
 
+        //La música se reproduce al iniciar la función de busqueda
+        music.play();
         //asigna a la variable pokeName el valor escrito en el input pokeName de html
     const pokeName = document.getElementById("pokeName");
 
