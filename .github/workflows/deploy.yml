@@ -35,3 +35,5 @@ jobs:
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v4
         id: deployment 
+        with:
+          path: ./ # Sube todos los archiv
