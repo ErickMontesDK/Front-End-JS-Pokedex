@@ -11,7 +11,9 @@ jobs:
     permissions:
       id-token: write  # Permiso necesario para generar tokens de identidad
       contents: read    # Permiso para leer el contenido del repositorio
-      pages: write      # Permiso para desplegar en GitHub Pages
+      pages: write      # Permiso para desplegar en GitHub 
+    environment:  # Agrega el entorno aquí
+      name: github-pages
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v3
@@ -30,3 +32,4 @@ jobs:
 
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v4
+        id: deployment 
