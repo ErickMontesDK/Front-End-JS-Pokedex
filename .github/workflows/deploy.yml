@@ -36,4 +36,4 @@ jobs:
         uses: actions/deploy-pages@v4
         id: deployment 
         with:
-          path: ./ # Sube todos los archiv
+          folder: ./ # Sube todos los archiv
