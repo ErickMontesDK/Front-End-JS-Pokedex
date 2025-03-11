@@ -18,6 +18,4 @@ jobs:
 
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v3
-        with:
-          branch: main
-          folder: ./
+
