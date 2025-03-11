@@ -1,0 +1,23 @@
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia 'main' si tu branch principal tiene otro nombre
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Crear config.js con Secrets
+        run: |
+          echo "export const HUEVA = \"${{ secrets.HUEVA }}\";" > variables.js
+
+      - name: Subir cambios a GitHub Pages
+        uses: actions/upload-pages-artifact@v2
+
+      - name: Desplegar en GitHub Pages
+        uses: actions/deploy-pages@v2
