@@ -1,1 +1,0 @@
-export const hueva = "a la vibora vibora de la mar"
