@@ -20,6 +20,11 @@ jobs:
         run: |
           echo "export const HUEVA = \"${{ secrets.HUEVA }}\";" > variables.js
 
+      - name: Subir artefacto para GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v3
 
