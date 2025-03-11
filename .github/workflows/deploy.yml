@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Permiso necesario para generar tokens de identidad
+      contents: read    # Permiso para leer el contenido del repositorio
+      pages: write      # Permiso para desplegar en GitHub Pages
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v3
