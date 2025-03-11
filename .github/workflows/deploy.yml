@@ -20,11 +20,13 @@ jobs:
         run: |
           echo "export const HUEVA = \"${{ secrets.HUEVA }}\";" > variables.js
 
+      - name: Listar archivos (para depuración)
+        run: ls -R  # Lista todos los archivos para verificar que todo esté en su lugar
+
       - name: Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: ./  # Sube todos los archivos en la raíz del repositorio
 
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v3
-
